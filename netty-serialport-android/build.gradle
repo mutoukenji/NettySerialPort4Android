@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'android-observe'
+    bintrayName = 'netty-serialport-android'
 
     publishedGroupId = 'tech.yaog.netty'
     libraryName = 'netty-serialport-android'
@@ -11,7 +11,7 @@ ext {
     libraryDescription = 'Netty SerialPort Transport Library for Android'
 
     siteUrl = 'https://github.com/mutoukenji/NettySerialPort4Android'
-    gitUrl = 'https://github.com/mutoukenji/NettySerialPort4Android/.git'
+    gitUrl = 'https://github.com/mutoukenji/NettySerialPort4Android.git'
 
     libraryVersion = '1.0.0'
 
@@ -21,7 +21,7 @@ ext {
 
     licenseName = 'Apache License 2.0'
     licenseUrl = 'https://raw.githubusercontent.com/mutoukenji/NettySerialPort4Android/master/LICENSE'
-    allLicenses = ["Apache License 2.0"]
+    allLicenses = ["Apache-2.0"]
 }
 
 android {
