@@ -1,0 +1,2 @@
+include ':app', ':netty-serialport-android'
+rootProject.name='NettySerialPort4Android'
