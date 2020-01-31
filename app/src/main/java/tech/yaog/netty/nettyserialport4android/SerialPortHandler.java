@@ -24,7 +24,7 @@ public class SerialPortHandler {
     private static final String tag = SerialPortHandler.class.getName();
 
     public String getDevice() {
-        return "/dev/ttyUSB4";
+        return "/dev/ttyO2";
     }
 
     public void start() {
