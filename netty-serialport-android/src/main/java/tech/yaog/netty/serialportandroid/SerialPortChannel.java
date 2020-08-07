@@ -34,9 +34,7 @@ import static tech.yaog.netty.serialportandroid.SerialPortChannelOption.WAIT_TIM
 /**
  * A channel to a serial device using the RXTX library.
  *
- * @deprecated this transport will be removed in the next major version.
  */
-@Deprecated
 public class SerialPortChannel extends OioByteStreamChannel {
 
     private static final SerialPortDeviceAddress LOCAL_ADDRESS = new SerialPortDeviceAddress("localhost");

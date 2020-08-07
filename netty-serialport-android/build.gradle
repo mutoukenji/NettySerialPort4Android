@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/mutoukenji/NettySerialPort4Android'
     gitUrl = 'https://github.com/mutoukenji/NettySerialPort4Android.git'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '4.1.12'
 
     developerId = 'mutoukenji'
     developerName = 'MutouKenji'
@@ -49,9 +49,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'io.netty:netty-buffer:4.1.43.Final'
-    implementation 'io.netty:netty-transport:4.1.43.Final'
-    implementation 'tech.yaog.hardwares:serial-port:1.1.2'
+    implementation 'io.netty:netty-buffer:4.1.12.Final'
+    implementation 'io.netty:netty-transport:4.1.12.Final'
+    implementation 'tech.yaog.hardwares:serial-port:1.1.5'
 
 }
 

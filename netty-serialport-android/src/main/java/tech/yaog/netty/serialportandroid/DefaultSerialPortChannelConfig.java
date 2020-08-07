@@ -19,7 +19,6 @@ import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.DefaultChannelConfig;
 import io.netty.channel.MessageSizeEstimator;
-import io.netty.channel.PreferHeapByteBufAllocator;
 import io.netty.channel.RecvByteBufAllocator;
 import io.netty.channel.WriteBufferWaterMark;
 
@@ -37,9 +36,7 @@ import static tech.yaog.netty.serialportandroid.SerialPortChannelOption.WAIT_TIM
 /**
  * Default configuration class for RXTX device connections.
  *
- * @deprecated this transport will be removed in the next major version.
  */
-@Deprecated
 final class DefaultSerialPortChannelConfig extends DefaultChannelConfig implements SerialPortChannelConfig {
 
     private volatile int baudrate = 115200;
@@ -53,7 +50,6 @@ final class DefaultSerialPortChannelConfig extends DefaultChannelConfig implemen
 
     DefaultSerialPortChannelConfig(SerialPortChannel channel) {
         super(channel);
-        setAllocator(new PreferHeapByteBufAllocator(getAllocator()));
     }
 
     @Override
@@ -218,7 +214,6 @@ final class DefaultSerialPortChannelConfig extends DefaultChannelConfig implemen
     }
 
     @Override
-    @Deprecated
     public SerialPortChannelConfig setMaxMessagesPerRead(int maxMessagesPerRead) {
         super.setMaxMessagesPerRead(maxMessagesPerRead);
         return this;

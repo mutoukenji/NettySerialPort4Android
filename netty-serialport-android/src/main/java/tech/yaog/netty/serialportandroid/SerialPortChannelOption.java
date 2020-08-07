@@ -20,9 +20,7 @@ import io.netty.channel.ChannelOption;
 /**
  * Option for configuring a serial port connection
  *
- * @deprecated this transport will be removed in the next major version.
  */
-@Deprecated
 public final class SerialPortChannelOption<T> extends ChannelOption<T> {
 
     public static final ChannelOption<Integer> BAUD_RATE = valueOf(SerialPortChannelOption.class, "BAUD_RATE");

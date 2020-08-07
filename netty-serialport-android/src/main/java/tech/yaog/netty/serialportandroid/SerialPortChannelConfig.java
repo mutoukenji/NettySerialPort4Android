@@ -50,9 +50,7 @@ import tech.yaog.hardwares.serialport.SerialPort;
  * </tr>
  * </table>
  *
- * @deprecated this transport will be removed in the next major version.
  */
-@Deprecated
 public interface SerialPortChannelConfig extends ChannelConfig {
     enum Stopbits {
         /**
