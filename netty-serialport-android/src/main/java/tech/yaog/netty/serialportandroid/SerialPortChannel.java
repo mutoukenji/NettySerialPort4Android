@@ -83,7 +83,7 @@ public class SerialPortChannel extends OioByteStreamChannel {
                 0
                 );
 
-        activate(new SerialPortInputStream(serialPort.getInputStream()), serialPort.getOutputStream());
+        activate(new SerialPortInputStream(serialPort.getInputStream()), new SerialPortOutputStream(serialPort.getOutputStream()));
     }
 
     @Override
